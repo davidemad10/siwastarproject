@@ -481,6 +481,7 @@ Header Style
   color: #1e1e1e;
   font-weight: 700;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .background-header .main-nav .logo h1 {
@@ -818,7 +819,7 @@ Banner Style
   background-image: url(../images/banner-03.jpg);
 }
 
-.main-banner .item span.category {
+/* .main-banner .item span.category {
   background-color: #fff;
   color: #1e1e1e;
   font-size: 16px;
@@ -832,7 +833,7 @@ Banner Style
 .main-banner .item span.category em {
   font-style: normal;
   color: #f35525;
-}
+} */
 
 .main-banner .item h2 {
   font-size: 62px;
@@ -898,6 +899,29 @@ Banner Style
 .main-banner .owl-nav .owl-next i:hover {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-banner .item .category {
+  background: #008c82;
+  color: white;
+  font-size: 32px; /* Increased size */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto 30px; /* Centering it */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.main-banner .item .category em {
+  font-style: normal;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* 
