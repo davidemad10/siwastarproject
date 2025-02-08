@@ -1,0 +1,332 @@
+.bod {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 17px;
+  direction: rtl;
+  text-align: right;
+  margin: 10px 20px;
+}
+
+.home a {
+  color: rgb(33, 167, 91);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.arrow {
+  color: black;
+  margin: 0 5px;
+}
+
+.about {
+  color: rgb(31, 127, 212);
+  font-weight: bold;
+}
+.aiimg {
+  position: relative;
+}
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Amiri", serif;
+  z-index: 2;
+}
+.aiimg img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.aiimg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.mainsec {
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pref {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.imgsec img {
+  max-width: 500px;
+  height: auto;
+  margin-right: 150px;
+  border-radius: 15px;
+}
+
+.textsec {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
+
+.textsec h1 {
+  color: rgb(33, 167, 91);
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Amiri", serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.textsec p {
+  max-width: 80%;
+  text-align: justify;
+}
+
+.whatwebring {
+  margin-top: 30px;
+  text-align: right;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.whatwebring h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 155px;
+}
+
+.whatwebring p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  direction: rtl;
+  text-align: justify;
+  padding: 0 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  max-width: 80%;
+  margin-right: 110px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1050px) {
+  body,
+  html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .aiimg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .text-overlay {
+    top: 3%;
+  }
+  .aiimg img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+  .pref {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .imgsec img {
+    max-width: 80%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .textsec {
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .textsec h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .whatwebring {
+    align-items: flex-start;
+    width: 100%;
+    text-align: right;
+  }
+
+  .whatwebring h3 {
+    font-size: 24px;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 80px;
+  }
+
+  .whatwebring p {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+    font-size: 15px;
+    text-align: right;
+    line-height: 1.6;
+    margin-right: 60px;
+  }
+
+  .mainsec {
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .aiimg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .aiimg img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+  .pref {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgsec img {
+    max-width: 95%;
+    margin-right: 0;
+  }
+
+  .textsec {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .textsec h1 {
+    font-size: 28px;
+  }
+  .whatwebring {
+    align-items: flex-start;
+  }
+  .whatwebring h3 {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: right;
+    margin-right: 70px;
+  }
+
+  .whatwebring p {
+    margin-left: 0;
+    padding: 0 15px;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .mainsec {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body,
+  html {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .aiimg {
+    width: 100%;
+    overflow: hidden;
+  }
+  .text-overlay {
+    top: 15%;
+    font-size: 2.5rem;
+  }
+  .aiimg img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+  .textsec h1 {
+    font-size: 24px;
+  }
+  .whatwebring {
+    align-items: flex-start;
+  }
+
+  .whatwebring h3 {
+    font-size: 22px;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .whatwebring p {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 16px;
+  }
+}
