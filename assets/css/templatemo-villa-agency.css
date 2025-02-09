@@ -816,11 +816,12 @@ Banner Style
 .main-banner .item h2 {
   font-size: 62px;
   font-weight: 700;
-  text-transform: uppercase;
   color: #fff;
-  line-height: 72px;
+  line-height: 70px;
   width: 50%;
+  direction: rtl;
   margin-bottom: 0px;
+  margin-left: 170px;
 }
 
 .main-banner .owl-dots {
@@ -1959,6 +1960,13 @@ body {
     float: right !important;
     width: auto !important;
   }
+  .main-banner .item h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 70%;
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1974,5 +1982,40 @@ body {
 @media (max-width: 480px) {
   .dropdown-menu {
     background: #080707;
+  }
+  .main-banner .item h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 70%;
+    margin-left: 20px;
+  }
+  .main-banner .item {
+    padding: 80px 5% 100px 5%; /* Reduce padding for small screens */
+  }
+
+  .main-banner .item h2 {
+    font-size: 28px;
+    line-height: 38px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .main-banner .item .category {
+    font-size: 18px; /* Smaller category text */
+    padding: 8px 15px;
+  }
+
+  .main-banner .owl-dots {
+    bottom: 20px;
+  }
+
+  .main-banner .owl-nav .owl-prev i,
+  .main-banner .owl-nav .owl-next i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
   }
 }
