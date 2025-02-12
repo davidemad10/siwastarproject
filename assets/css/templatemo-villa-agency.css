@@ -1981,7 +1981,7 @@ body {
 
 @media (max-width: 480px) {
   .dropdown-menu {
-    background: #080707;
+    background: none;
   }
   .main-banner .item h2 {
     font-size: 40px;
